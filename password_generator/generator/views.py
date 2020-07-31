@@ -12,7 +12,7 @@ def about(request):
 
 def password(request):
     length = request.GET.get('length')
-    characters = list('abcdefghijklmnopqrstuvwxyz')
+    characters = list('abcdefghijklmnopqrstuvwxz')
 
     if request.GET.get('uppercase'):
         characters.extend(list('ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
